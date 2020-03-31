@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SampleGaode
+
+mvf4ms:
+  version: 1.1.1
+
+server:
+  port: 8080
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://{REGISTRY_IP}:{REGISTRY_PORT}/eureka

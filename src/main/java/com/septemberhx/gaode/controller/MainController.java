@@ -20,8 +20,8 @@ public class MainController {
 
     @PostMapping(path = "/navigation")
     @ResponseBody
-    @MFuncDescription(value = "navigation", level = 3)
+    @MFuncDescription(value = "navigation", level = 4)
     public MResponse navigation(@RequestBody MResponse params, HttpServletRequest request) {
-        return MBaseUtils.generateResInKBSize(13);
+        return MBaseUtils.generateResInKBSize(10);
     }
 }

@@ -1,6 +1,7 @@
 package com.septemberhx.gaode.controller;
 
 import com.septemberhx.common.bean.MResponse;
+import com.septemberhx.gaode.utils.MBaseUtils;
 import com.septemberhx.mclient.annotation.MFuncDescription;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,6 +22,6 @@ public class MainController {
     @ResponseBody
     @MFuncDescription(value = "navigation", level = 3)
     public MResponse navigation(@RequestBody MResponse params, HttpServletRequest request) {
-        return MResponse.successResponse();
+        return MBaseUtils.generateResInKBSize(13);
     }
 }
